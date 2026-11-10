@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import Navbar from '../components/Navbar';
+import Navbar from './homepage';
 
 import axios from 'axios';
 
@@ -8,9 +8,9 @@ import Footer from '../components/Footer';
 
 import { useParams, useNavigate, Link } from 'react-router-dom';
 
-import {useSellerData, Seller} from '../functions/getSellerData';
+import {useSellerData, Seller} from '../functions/getSellerByID';
 
-import {getAllProducts,Product as ProductFromAPI} from '../functions/getAllProducts';
+import {getAllProducts,Product as ProductFromAPI} from '../functions/getProductByID';
 
 import { getAllUsers } from '../functions/getUserData';
 

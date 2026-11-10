@@ -1,13 +1,13 @@
 
 
-export interface Seller{
+export interface ISeller{
 id: number;
-name: string;
+sellername: string;
 email: string;
-sellerthumbnail: string;
+sellerthumbnailurl: string;
+productsforsale:[];
 password: string;
 createdAt: Date;
 updatedAt: Date;
-products: [];
-
+ 
 }

@@ -1,18 +1,20 @@
-import { useState } from 'react'
-import { Routes, Route } from 'react-router'
  
+import {BrowserRouter, Route, Routes } from "react-router-dom";
+import Homepage from "./pages/homepage"
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <div>
-      <h1>Hello, Dickhead!</h1>
-      <p>Count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
+return(
+ <>
+<Routes>
+<Route path = "/" element = {<Homepage/>}/>
+
+</Routes>
+</>
+)
+
  
-    </div>
-  )
+   
 }
 
-export default App
+export default App;
